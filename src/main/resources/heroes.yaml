@@ -1,0 +1,22 @@
+# Configuration file for OT console.
+#
+# This is a yaml file. Much more concise than xml.
+# Please check http://yaml.org/spec/1.1/#id857168 for yaml spec.
+# Please check https://bitbucket.org/asomov/snakeyaml for using yaml in java.
+# CAUTION: indentation is significant for yaml parsing.
+# if information is misaligned (especially in the menu hierarchy), parsing will fail.
+# Never use tab. 3 spaces is recommended.
+#
+# Author: T Villard
+#####################################################
+heroes:
+
+-  name: Galactus
+   physicalStrength: 9
+   specialPower: 7
+   weapon: 9
+
+-  name: SilverSurfer
+   physicalStrenght: 9
+   specialPower: 10
+   weapon: 5

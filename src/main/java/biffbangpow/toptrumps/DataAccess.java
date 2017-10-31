@@ -17,7 +17,7 @@ public class DataAccess {
     }
 
 
-    public Config getSuperHeroes() throws IOException {
+    public Config getConf() throws IOException {
 
         Representer representer = new Representer();
         representer.getPropertyUtils().setSkipMissingProperties(true);

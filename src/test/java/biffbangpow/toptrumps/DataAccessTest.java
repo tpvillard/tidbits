@@ -10,10 +10,11 @@ public class DataAccessTest {
 
     @Test
     public void test_read_configuration() throws IOException {
+
         System.out.println(System.getProperty("user.dir"));
         DataAccess access = new DataAccess("src/test/resources/heroes.yaml");
-        Config conf = access.getSuperHeroes();
-        Assert.assertEquals(conf.size(), 2);
+        Config conf = access.getConf();
+        Assert.assertEquals(conf.getHeroes().size(), 2);
 
         List<SuperHero> heroes = conf.getHeroes();
         SuperHero galactus = heroes.get(0);

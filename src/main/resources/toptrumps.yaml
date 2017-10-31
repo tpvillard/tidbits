@@ -17,6 +17,41 @@ heroes:
    weapon: 9
 
 -  name: SilverSurfer
-   physicalStrenght: 9
+   physicalStrength: 9
    specialPower: 10
+   weapon: 5
+
+-  name: Thor
+   physicalStrength: 9
+   specialPower: 8
+   weapon: 6
+
+-  name: IronMan
+   physicalStrength: 8
+   specialPower: 5
+   weapon: 6
+
+-  name: SpiderMan
+   physicalStrength: 7
+   specialPower: 6
+   weapon: 6
+
+-  name: AbsorbingMan
+   physicalStrength: 8
+   specialPower: 8
+   weapon: 2
+
+-  name: TheVision
+   physicalStrength: 7
+   specialPower: 8
+   weapon: 0
+
+-  name: Goliath
+   physicalStrength: 8
+   specialPower: 7
+   weapon: 6
+
+-  name: Mephisto
+   physicalStrength: 8
+   specialPower: 9
    weapon: 5

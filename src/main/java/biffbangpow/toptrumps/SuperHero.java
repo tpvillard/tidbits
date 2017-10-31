@@ -38,4 +38,5 @@ public class SuperHero {
     public void setWeapon(int weapon) {
         this.weapon = weapon;
     }
+
 }

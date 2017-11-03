@@ -23,10 +23,14 @@ public class GameTest {
         access = new DataAccess("src/main/resources/mediumtrumps.yaml");
         Config medium = access.getConf();
 
+        access = new DataAccess("src/main/resources/lowtrumps.yaml");
+        Config low = access.getConf();
+
         List<SuperHero> heroes = new ArrayList<>(top.getHeroes());
         heroes.addAll(medium.getHeroes());
+        heroes.addAll(low.getHeroes());
 
         Game game = new Game(heroes);
-        game.play(100000);
+        game.play(500000);
     }
 }

@@ -60,3 +60,67 @@ heroes:
    physicalStrength: 1
    specialPower: 8
    weapon: 0
+
+-  name: Hulk
+   physicalStrength: 9
+   specialPower: 5
+   weapon: 5
+
+-  name: HumanTorch
+   physicalStrength: 5
+   specialPower: 8
+   weapon: 4
+
+-  name: DareDevil
+   physicalStrength: 7
+   specialPower: 5
+   weapon: 5
+
+-  name: TheRhino
+   physicalStrength: 8
+   specialPower: 4
+   weapon: 4
+
+-  name: TheThing
+   physicalStrength: 9
+   specialPower: 4
+   weapon: 4
+
+-  name: TheJackal
+   physicalStrength: 5
+   specialPower: 3
+   weapon: 6
+
+-  name: MrFantastic
+   physicalStrength: 5
+   specialPower: 8
+   weapon: 5
+
+-  name: DoctorDoom
+   physicalStrength: 3
+   specialPower: 5
+   weapon: 8
+
+-  name: TheGremlin
+   physicalStrength: 1
+   specialPower: 4
+   weapon: 7
+
+-  name: TheRedSkull
+   physicalStrength: 5
+   specialPower: 4
+   weapon: 7
+
+-  name: BlackBolt
+   physicalStrength: 5
+   specialPower: 9
+   weapon: 0
+
+-  name: TheGrizzly
+   physicalStrength: 8
+   specialPower: 3
+   weapon: 0
+
+
+
+

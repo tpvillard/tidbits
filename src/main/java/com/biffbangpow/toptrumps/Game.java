@@ -55,9 +55,9 @@ public class Game {
             count++;
             LOGGER.debug("End Of Round");
 
-        } while (winners.size() > 1 && count < 100);
+        } while (winners.size() > 1 && count < 20);
         if (winners.size() >= 2) {
-            LOGGER.info("Several Winners: {}", winners);
+            LOGGER.debug("Several Winners: {}", winners);
         }
         LOGGER.debug("Winner is: {}", winners.get(0).getName());
         return winners.get(0);

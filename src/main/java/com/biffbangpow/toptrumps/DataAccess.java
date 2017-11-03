@@ -1,4 +1,4 @@
-package biffbangpow.toptrumps;
+package com.biffbangpow.toptrumps;
 
 import org.yaml.snakeyaml.Yaml;
 import org.yaml.snakeyaml.constructor.Constructor;

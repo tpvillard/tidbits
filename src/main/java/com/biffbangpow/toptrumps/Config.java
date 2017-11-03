@@ -1,4 +1,4 @@
-package biffbangpow.toptrumps;
+package com.biffbangpow.toptrumps;
 
 
 import java.util.List;

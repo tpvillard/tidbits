@@ -17,6 +17,6 @@ heroes:
    weapon: 9
 
 -  name: SilverSurfer
-   physicalStrenght: 9
+   physicalStrength: 9
    specialPower: 10
    weapon: 5

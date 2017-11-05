@@ -31,6 +31,6 @@ public class GameTest {
         heroes.addAll(low.getHeroes());
 
         Game game = new Game(heroes);
-        game.play(500000);
+        game.play(100000);
     }
 }

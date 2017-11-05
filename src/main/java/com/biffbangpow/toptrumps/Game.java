@@ -5,6 +5,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class Game {
 
@@ -39,7 +40,11 @@ public class Game {
 
     private void dumpStats(int n) {
 
-        for (Map.Entry<String,Integer> entry : stats.entrySet()) {
+        List<Map.Entry<String,Integer>> entries = stats.entrySet()
+                .stream()
+                .sorted(Map.Entry.comparingByValue(Collections.reverseOrder()))
+                .collect(Collectors.toList());
+        for (Map.Entry<String,Integer> entry : entries) {
             LOGGER.info("{}: {}", entry.getKey(), entry.getValue());
         }
     }

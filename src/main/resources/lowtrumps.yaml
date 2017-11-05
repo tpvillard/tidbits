@@ -11,22 +11,12 @@
 #####################################################
 heroes:
 
--  name: BlackPanther
-   physicalStrength: 6
-   specialPower: 5
-   weapon: 4
-
--  name: TheVulture
-   physicalStrength: 5
-   specialPower: 7
-   weapon: 2
-
--  name: Morbius
-   physicalStrength: 6
-   specialPower: 6
-   weapon: 0
-
 -  name: GhostRider
+   physicalStrength: 4
+   specialPower: 7
+   weapon: 5
+
+-  name: DoctorOctopus
    physicalStrength: 4
    specialPower: 7
    weapon: 5
@@ -34,11 +24,6 @@ heroes:
 -  name: HammerHead
    physicalStrength: 5
    specialPower: 6
-   weapon: 5
-
--  name: DoctorOctopus
-   physicalStrength: 4
-   specialPower: 7
    weapon: 5
 
 -  name: HumanTop
@@ -50,6 +35,21 @@ heroes:
    physicalStrength: 6
    specialPower: 4
    weapon: 5
+
+-  name: TheVulture
+   physicalStrength: 5
+   specialPower: 7
+   weapon: 2
+
+-  name: Morbius
+   physicalStrength: 6
+   specialPower: 6
+   weapon: 0
+
+-  name: BlackPanther
+   physicalStrength: 6
+   specialPower: 5
+   weapon: 4
 
 -  name: Tarentula
    physicalStrength: 6

@@ -7,6 +7,20 @@ import org.slf4j.LoggerFactory;
 import java.util.*;
 import java.util.stream.Collectors;
 
+/**
+ * This is a top trump game simulation based on Marvel super heroes.
+ *
+ * The game is as follow:
+ *
+ * Pick an attacker card from the deck, choose a property for the fight among strength, special power, weapon.
+ * Pick a defender card, the defeated card is removed from the deck.
+ * Play the game until there is one (or possibly two) final(s) winner(s).
+ *
+ * The program tries to answer the question:
+ *
+ * Can a low level trump (ie a very weak super hero like Tarentula) win a game?
+ *
+ */
 public class Game {
 
     private static final Logger LOGGER = LoggerFactory
@@ -15,10 +29,18 @@ public class Game {
     private List<SuperHero> config;
     private final Map<String, Integer> stats = new HashMap<>();
 
+    /**
+     * Builds a game with the specified deck of super heroes
+     * @param heroes the super heroes
+     */
     public Game(List<SuperHero> heroes) {
         this.config = heroes;
     }
 
+    /**
+     * Play n games
+     * @param n the number of games to play
+     */
     public void play(int n) {
         stats.clear();
         for (int i = 0; i < n; i++) {
@@ -49,6 +71,10 @@ public class Game {
         }
     }
 
+    /**
+     * Play a game
+     * @return the winner
+     */
     public SuperHero play() {
 
         List<SuperHero> deck = new ArrayList<>(config);
@@ -68,7 +94,7 @@ public class Game {
         return winners.get(0);
     }
 
-    public static List<SuperHero> exhaustDeck(List<SuperHero> deck) {
+    private static List<SuperHero> exhaustDeck(List<SuperHero> deck) {
 
         Random random = new Random();
         List<SuperHero> winners = new ArrayList<>();

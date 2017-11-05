@@ -59,6 +59,10 @@ public class SuperHero {
         stats.put(Type.WEAPON, (int) (deck.stream().filter(h -> h.getWeapon() < weapon).count() * 100 / deck.size()));
     }
 
+    /**
+     * Returns the most favorable comparator for the next fight.
+     * @return the most favorable comparator for the next fight.
+     */
     public Comparable<SuperHero> getComparator() {
 
         switch (getTypeForMaxStat()) {

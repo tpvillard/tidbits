@@ -34,4 +34,10 @@ public class TreeMapTest {
 
         Assert.assertEquals((int) map.ceilingKey(6), 7);
     }
+
+    @Test
+    public void test_get_first_key() {
+
+        Assert.assertEquals((int) map.firstKey(), 1);
+    }
 }

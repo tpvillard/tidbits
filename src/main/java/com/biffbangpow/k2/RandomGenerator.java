@@ -2,11 +2,6 @@ package com.biffbangpow.k2;
 
 public class RandomGenerator {
 
-    public static void main(String[] args) throws InterruptedException {
-        final long random = generateRandom();
-        System.out.println("Random: " + random);
-    }
-
     /**
      * Generates a random integer.
      * @return the random integer

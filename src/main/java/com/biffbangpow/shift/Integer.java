@@ -34,8 +34,4 @@ public class Integer {
         }
         return res;
     }
-
-    public static int parse2(String input) {
-        return java.lang.Integer.parseInt(input);
-    }
 }

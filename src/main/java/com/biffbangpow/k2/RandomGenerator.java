@@ -1,5 +1,8 @@
 package com.biffbangpow.k2;
 
+/**
+ * A random long generator
+ */
 public class RandomGenerator {
 
     /**

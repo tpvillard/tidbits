@@ -13,7 +13,7 @@ public class RandomGenerator {
      * @throws InterruptedException when the method is interrupted.
      */
     public static long generateRandom() throws InterruptedException {
-        long randomInteger = 0; // variable should be final when used in lambda
+        long randomInteger = 0;
         int i = 0;
         while (randomInteger == 0 || i++ < 5) {
             randomInteger = (System.currentTimeMillis() & 0xFF) * 31;

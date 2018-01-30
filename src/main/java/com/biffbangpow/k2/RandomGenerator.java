@@ -19,4 +19,8 @@ public class RandomGenerator {
         }
         return randomInteger;
     }
+
+    public static String doTest() {
+        return "this is a dummy test";
+    }
 }

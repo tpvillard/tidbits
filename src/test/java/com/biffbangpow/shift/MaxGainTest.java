@@ -18,4 +18,10 @@ public class MaxGainTest {
 
         Assert.assertNull(null);
     }
+
+    @Test
+    public void test_is_not_null() {
+
+        Assert.assertNull(new Object());
+    }
 }

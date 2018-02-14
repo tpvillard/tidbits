@@ -40,4 +40,10 @@ public class TreeMapTest {
 
         Assert.assertEquals((int) map.firstKey(), 1);
     }
+
+    @Test
+    public void test_get_last_key() {
+
+        Assert.assertEquals((int) map.lastKey(), 1);
+    }
 }

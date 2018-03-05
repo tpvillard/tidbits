@@ -22,6 +22,6 @@ public class MaxGainTest {
     @Test
     public void test_is_not_null() {
 
-        Assert.assertNull(new Object());
+        Assert.assertNotNull(new Object());
     }
 }

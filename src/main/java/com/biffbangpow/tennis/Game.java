@@ -14,15 +14,20 @@ public class Game {
 
         if (server.getPoint() >= 4 || receiver.getPoint() >= 4) {
             int diff = server.getPoint() - receiver.getPoint();
-            switch (diff) {
-                case (0):
-                    return "Equality";
-                case(1):
-                    return "Advantage Server";
-                case(-1):
-                    return "Advantage Receiver";
-                default:
-                    throw new IllegalArgumentException("Diff in error: " + diff);
+            if (diff >= 2) {
+                server.resetPoint();
+                server.incrementGame();
+                return "Game: " + server.getGame() + ", " + PointToScore.getScoreFor(server.getPoint());
+            } else if (diff == 1) {
+                return "Advantage Server";
+            } else if (diff == 0) {
+                return "Equality";
+            } else if (diff == -1) {
+                return "Advantage Receiver";
+            } else {
+                receiver.resetPoint();
+                receiver.incrementGame();
+                return "Game: " + receiver.getGame() + ", " + PointToScore.getScoreFor(receiver.getPoint());
             }
         }
 

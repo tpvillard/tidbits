@@ -96,4 +96,17 @@ public class GameTest {
         // Then
         Assert.assertEquals(game.getScore(), "Equality");
     }
+
+    @Test
+    public void should_return_game_1() {
+
+        // When
+        game.serverWins();
+        game.serverWins();
+        game.serverWins();
+        game.serverWins();
+
+        // Then
+        Assert.assertEquals(game.getScore(), "Game: 1, 0");
+    }
 }

@@ -24,4 +24,10 @@ public class DefaultServiceTest {
 
         service.operation1(new Context());
     }
+
+    @Test
+    public void should_print_operation2() {
+
+        service.operation2(new Context());
+    }
 }

@@ -3,7 +3,7 @@ package com.biffbangpow.conversation;
 public abstract class AbstractService<R, T> {
 
 
-    protected interface Job<R, T> {
+    protected interface Job<R, T>  {
 
         R execute(T t);
     }

@@ -1,7 +1,10 @@
 package com.biffbangpow.conversation;
 
-/**
- * Created by tvillard on 27/03/2018.
- */
 public class Context {
+
+    private final String serviceName;
+
+    public Context(String serviceName) {
+        this.serviceName = serviceName;
+    }
 }

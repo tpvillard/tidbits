@@ -23,4 +23,10 @@ public class DefaultService extends AbstractService<ResultOp, Context> {
         return closeConversation(context, job);
     }
 
+    public ResultOp operation3(Context context) {
+
+        Job<ResultOp, Context> job = context1 -> supplier.get();
+        return closeConversation(context, job);
+    }
+
 }

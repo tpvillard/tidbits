@@ -1,7 +1,6 @@
 package com.biffbangpow.fare;
 
 import java.util.Arrays;
-import java.util.Optional;
 import java.util.function.Predicate;
 
 public class ProFullFlexAuthorization {

@@ -2,6 +2,7 @@ package com.biffbangpow.fare;
 
 import java.util.Arrays;
 import java.util.function.Predicate;
+import java.util.stream.Stream;
 
 public class ProFullFlexAuthorization {
 
@@ -39,10 +40,15 @@ public class ProFullFlexAuthorization {
         abstract boolean isAuthorized(NegociatedFareAuthorization authorization);
 
         static FceType of(String fceTypologie) {
-            return Arrays.stream(FceType.values()).filter(getFceTypePredicate(fceTypologie)).findFirst().orElse(OTHER);
+            return Stream.of(FceType.values()).filter(getFceTypePredicate(fceTypologie)).findFirst().orElse(OTHER);
+        }
+
+        static boolean isTypeGrandCompte(FceType type) {
+            return type == FceType.GRAND_COMPTE;
         }
 
         private static Predicate<FceType> getFceTypePredicate(String fceTypologie) {
+
             return fceType -> fceType.getFceTypologie().equalsIgnoreCase(fceTypologie);
         }
     }

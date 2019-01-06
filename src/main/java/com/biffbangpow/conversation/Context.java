@@ -7,4 +7,8 @@ public class Context {
     public Context(String serviceName) {
         this.serviceName = serviceName;
     }
+
+    public Context() {
+        this("default");
+    }
 }

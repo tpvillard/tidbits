@@ -1,13 +1,7 @@
 package com.biffbangpow.conversation;
 
-
-import com.biffbangpow.tennis.Game;
-import com.biffbangpow.tennis.Player;
-import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-
-import java.util.function.Supplier;
 
 public class DefaultServiceTest {
 

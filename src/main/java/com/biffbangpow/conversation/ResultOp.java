@@ -7,4 +7,8 @@ public class ResultOp {
     public ResultOp(int operation) {
         this.operation = operation;
     }
+
+    public ResultOp() {
+        this(0);
+    }
 }

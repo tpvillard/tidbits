@@ -6,40 +6,44 @@ import java.util.Optional;
 
 public class Album {
 
-    private final String name;
-    private final List<Artist> artists;
+    private final String title;
+    private final Artist artist;
     private final List<Track> tracks;
 
     private Album(AlbumBuilder builder) {
-        this.name = builder.name;
-        this.artists = builder.artists;
+        this.title = builder.title;
+        this.artist = builder.artist;
         this.tracks = builder.tracks;
     }
 
-    public String getName() {
-        return name;
+    public String getTitle() {
+        return title;
     }
 
-    public List<Artist> getArtists() {
-        return artists;
+    public Artist getArtist() {
+        return artist;
     }
 
     public List<Track> getTracks() {
         return tracks;
     }
 
+    public static AlbumBuilder newBuilder() {
+        return new AlbumBuilder();
+    }
+
     public static class AlbumBuilder {
-        private String name;
-        private List<Artist> artists;
+        private String title;
+        private Artist artist;
         private List<Track> tracks;
 
-        public AlbumBuilder withName(String name) {
-            this.name = name;
+        public AlbumBuilder withTitle(String name) {
+            this.title = name;
             return this;
         }
 
-        public AlbumBuilder withArtists(List<Artist> artists) {
-            this.artists = artists;
+        public AlbumBuilder withArtist(Artist artist) {
+            this.artist = artist;
             return this;
         }
 
@@ -50,8 +54,8 @@ public class Album {
 
         public Album build() {
 
-            name = Optional.ofNullable(name).orElse("");
-            artists = Optional.ofNullable(artists).orElse(new ArrayList<>());
+            title = Optional.ofNullable(title).orElse("");
+            artist = Optional.ofNullable(artist).orElse(new Artist(""));
             tracks = Optional.ofNullable(tracks).orElse(new ArrayList<>());
             return new Album(this);
         }

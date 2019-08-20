@@ -6,7 +6,7 @@ import java.util.List;
 public class User {
 
     private final String userName;
-    private final List<User> followed = new ArrayList<>();
+    private final List<User> followers = new ArrayList<>();
 
     public User(String userName) {
         this.userName = userName;
@@ -16,11 +16,11 @@ public class User {
         return userName;
     }
 
-    public boolean isFollowerOf(User user) {
-        return followed.contains(user);
+    public boolean isFollowedBy(User user) {
+        return followers.contains(user);
     }
 
-    public void follow(User user) {
-        followed.add(user);
+    public void addFollower(User user) {
+        followers.add(user);
     }
 }

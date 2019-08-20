@@ -14,6 +14,6 @@ public class Tweeter {
     }
 
     public void addFollower(User follower, User followed) {
-        follower.follow(followed);
+        followed.addFollower(follower);
     }
 }

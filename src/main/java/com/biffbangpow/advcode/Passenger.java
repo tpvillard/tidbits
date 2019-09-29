@@ -15,4 +15,8 @@ public class Passenger {
     boolean contains(AdvantageCode code) {
         return codes.contains(code);
     }
+
+    Set<AdvantageCode> getAdvantages() {
+        return codes;
+    }
 }

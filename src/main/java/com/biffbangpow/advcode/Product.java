@@ -12,7 +12,13 @@ public class Product {
         codes.add(code);
     }
 
-    boolean contains(AdvantageCode code) {
+    public boolean contains(AdvantageCode code) {
         return codes.contains(code);
+    }
+
+    public boolean isRequestedForPassenger(Passenger pax) {
+        Set<AdvantageCode> intersection = new HashSet<>(codes);
+        intersection.retainAll(pax.getAdvantages());
+        return intersection.size() != 0;
     }
 }
